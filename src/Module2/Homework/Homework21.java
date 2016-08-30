@@ -3,11 +3,11 @@ package Module2.Homework;
 /**
  * Created by Жека on 31.08.2016.
  */
-public class Dz {
+public class Homework21 {
     /**
      * Created by Жека on 27.08.2016.
      */
-        public static class Homework21 {
+
 
 
         static int Sum(int array[]) {
@@ -241,4 +241,4 @@ public class Dz {
 
 
     }
-}
+
