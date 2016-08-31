@@ -10,7 +10,7 @@ public class Homework21 {
 
 
 
-        static int Sum(int array[]) {
+        static int sum(int array[]) {
             int sum = 0;
             for (int i :array) {
 
@@ -21,7 +21,7 @@ public class Homework21 {
 
             return sum;
         }
-        static double Sum(double array[] ) {
+        static double sum(double array[] ) {
             double sum = 0;
             for (double i : array) {
 
@@ -32,20 +32,20 @@ public class Homework21 {
 
             return sum;
         }
-        static int min(int[]array){
+    static int min(int array []){
 
-            int min=0;
+        int min=0;
 
-            for( int i = 0;i<array.length;i++)
-            {
-                if (min >array[i]){
-                    min = array[i];
-                }
-
+        for( int i = 0;i<array.length;i++)
+        {
+            if (min >array[i]){
+                min = array[i];
             }
-            return min;
+
         }
-        static double min(double[]array){
+        return min;
+    }
+        static double min(double array[]){
 
             double min=0;
 
@@ -58,7 +58,7 @@ public class Homework21 {
             }
             return min;
         }
-        static int max(int[]array){
+        static int max(int array[]){
 
             int max=0;
 
@@ -71,7 +71,7 @@ public class Homework21 {
             }
             return max;
         }
-        static double max(double[]array){
+        static double max(double array[]){
 
             double max=0;
 
@@ -84,7 +84,7 @@ public class Homework21 {
             }
             return max;
         }
-        static int maxPositive(int[]array){
+        static int maxPositive(int array[]){
 
             int max=0;
 
@@ -97,7 +97,7 @@ public class Homework21 {
             }
             return max;
         }
-        static double maxPositive(double[]array){
+        static double maxPositive(double array[]){
 
             double max=0;
 
@@ -150,9 +150,9 @@ public class Homework21 {
             }
             return mod;
         }
-        static int secondLargest(int[]array){
+        static int secondLargest(int array[]){
             int max=0;
-            int secondLargest=array[0];
+            int secondLargest=0;
 
             for( int i = 0;i<array.length;i++)
             {
@@ -173,9 +173,9 @@ public class Homework21 {
             }
             return secondLargest;
         }
-        static double secondLargest(double[]array){
+        static double secondLargest(double array[]){
             double max=0;
-            double secondLargest=array[0];
+            double secondLargest=0;
 
             for( int i = 0;i<array.length;i++)
             {
@@ -208,8 +208,8 @@ public class Homework21 {
 
 
 
-            int sum = Sum(array1);
-            double sum2=Sum(array2);
+            int sum = sum(array1);
+            double sum2=sum(array2);
             int min=min(array1);
             double min2=min(array2);
             int max=max(array1);
