@@ -3,29 +3,37 @@ package Module2.Homework;
 /**
  * Created by Жека on 31.08.2016.
  */
-  public class Homework23 {
-    static double withdrowAcount (double balances, double withdrawal, double commisions, String ownerName) {
+ public class Homework23 {
+    private static String name = "Ann";
+    private static double withdraw = 100;
+    private static double commission = 0.05;
+    private static int[] balances = {1200, 250, 2000, 500, 3200};
+    private static String[] ownerNames = {"Jane", "Ann", "Jack", "Oww", "Lane"};
 
-        double res = commisions * withdrawal + withdrawal;
-        if (res < balances) {
 
-            double arr = balances - res;
-            System.out.println(ownerName +" " +withdrawal + " " + arr);
-        } else {
-            System.out.println("NO");
+    static double withdrawBalance(String ownerName, double withdrawal) {
+        double rest = -1;
+        double balance;
+        for (int i =0; i < ownerNames.length; i++) {
+            if (ownerName.equals(ownerNames[i])) {
+                balance = balances[i];
+                rest = balance - withdrawal - withdrawal*commission;
+
+            }
 
         }
-       return 0;
+
+        return rest;
+
     }
 
     public static void main(String[] args) {
-        double commisions=0.05;
-        int[] balances = {1200, 250, 2000, 500, 3200};
-        String[] ownerNames = {"Jane", "Ann", "Jack", "Oww", "Lane"};
-        double r=1200;
-        String ownerName = "Jane";
-        double withdrawal = 100;
-        double result=withdrowAcount(r, withdrawal,commisions,ownerName);
+
+        if (withdrawBalance(name, withdraw) >= 0) {
+            System.out.println(name + " " + withdraw + " " + withdrawBalance(name, withdraw));
+        } else System.out.println(name + " NO");
 
     }
+
+
 }
