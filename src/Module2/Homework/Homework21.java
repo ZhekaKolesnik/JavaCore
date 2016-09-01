@@ -34,7 +34,7 @@ public class Homework21 {
         }
     static int min(int array []){
 
-        int min=0;
+        int min=array[1];
 
         for( int i = 0;i<array.length;i++)
         {
@@ -150,29 +150,17 @@ public class Homework21 {
             }
             return mod;
         }
-        static int secondLargest(int array[]){
-            int max=0;
-            int secondLargest=0;
+    static int secondLargest(int[] array1){
+        int secondLarger = array1[0];
+        int max = max(array1);
 
-            for( int i = 0;i<array.length;i++)
-            {
-
-                if (max <array[i]) {
-
-                    max = array[i];
-
-
-                }
-
-                if (secondLargest<array[i]&&array[i]<max)
-                {
-                    secondLargest=array[i];
-                }
-
-
+        for (int i=0; i < array1.length; i++){
+            if ((array1[i] > secondLarger)&&(array1[i] < max)){
+                secondLarger = array1[i];
             }
-            return secondLargest;
         }
+        return secondLarger;
+    }
         static double secondLargest(double array[]){
             double max=0;
             double secondLargest=0;
@@ -203,7 +191,7 @@ public class Homework21 {
         public static void main(String[] args) {
 
 
-            int[] array1= {1,12,3,2,-5,6,1,2,8,10};
+            int[] array1= {100,200};
             double[] array2= {2.5,1.5,-12.1,4.8,5.2,8.9,12.5,-18.6,45.5,44.3};
 
 
