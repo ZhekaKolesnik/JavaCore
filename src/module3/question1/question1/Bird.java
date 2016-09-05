@@ -14,5 +14,6 @@ public class Bird extends Animal {
     protected void sing(){
         System.out.println("I am singing");
     }
-
+    protected void ebird(){System.out.println(" I am a bird");
+    }
 }
