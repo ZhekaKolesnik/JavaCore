@@ -6,11 +6,11 @@ package module3.question1.question2;
 public class Adder extends Arithmetic {
 
     boolean check(Integer a, Integer b){
-        return a >= b;
-//        if (a >= b) {
-//            return true;
-//        }
-//        else return false;
+
+       if (a >= b) {
+           return true;
+      }
+        else return false;
     }
 
 }
