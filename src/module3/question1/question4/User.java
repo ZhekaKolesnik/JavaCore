@@ -3,8 +3,8 @@ package module3.question1.question4;
 /**
  * Created by Жека on 06.09.2016.
  */
+public class User {
 
-    public class User {
         private String name;
         private int balance;
         private int monthsOfEmployment;
@@ -22,8 +22,8 @@ package module3.question1.question4;
             this.currency = currency;
         }
 
-        public int paySalary() {
-            return balance += salary;
+        public void paySalary() {
+            this.balance += salary;
         }
 
         public int withdraw(int summ) {
@@ -91,11 +91,11 @@ package module3.question1.question4;
 
 
 
-    public static void main(String[] args) {
-        User employee = new User("Zheka", 2000, 7, "Samsung", 1100, "UAN");
-        System.out.println(employee.paySalary());
-        System.out.println(employee.withdraw(367));
-        System.out.println(employee.companyNameLength());
-        System.out.println(employee.monthIncreaser(6));
+        public static void main(String[] args) {
+            User employee = new User("Zheka", 2000, 7, "Samsung", 1100, "UAN");
+
+            System.out.println(employee.withdraw(367));
+            System.out.println(employee.companyNameLength());
+            System.out.println(employee.monthIncreaser(6));
+        }
     }
-}
