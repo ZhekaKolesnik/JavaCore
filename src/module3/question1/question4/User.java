@@ -26,19 +26,19 @@ public class User {
             this.balance += salary;
         }
 
-        public int withdraw(int summ) {
+        public void withdraw(int summ) {
             int withdraw;
             if (summ < 1000) withdraw = summ * 5 / 100;
             else withdraw = summ * 10 / 100;
-            return balance - (withdraw + summ);
+            this.balance -= (withdraw + summ);
         }
 
         public int companyNameLength() {
             return companyName.length();
         }
 
-        public int monthIncreaser(int addMonth) {
-            return addMonth + monthsOfEmployment;
+        public void monthIncreaser(int addMonth) {
+            addMonth += monthsOfEmployment;
         }
 
         public String getName() {
@@ -94,8 +94,9 @@ public class User {
         public static void main(String[] args) {
             User employee = new User("Zheka", 2000, 7, "Samsung", 1100, "UAN");
 
-            System.out.println(employee.withdraw(367));
+
             System.out.println(employee.companyNameLength());
-            System.out.println(employee.monthIncreaser(6));
+
+
         }
     }
