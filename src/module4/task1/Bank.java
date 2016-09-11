@@ -1,10 +1,13 @@
 package module4.task1;
 
+import java.util.Currency;
+
 /**
  * Created by Жека on 11.09.2016.
  */
 public abstract class Bank {
     private long id;
+    private String bankCountry;
     private Currency currency;
     private int numberOfEmployee;
     private double avrSalaryOfEmploee;
