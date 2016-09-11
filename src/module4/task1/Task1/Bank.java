@@ -1,4 +1,4 @@
-package module4.task1;
+package module4.task1.Task1;
 
 import java.util.Currency;
 
