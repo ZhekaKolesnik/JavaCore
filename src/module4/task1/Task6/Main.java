@@ -1,4 +1,4 @@
-package module4.task1.Task5;
+package module4.task1.Task6;
 
 /**
  * Created by Жека on 12.09.2016.
