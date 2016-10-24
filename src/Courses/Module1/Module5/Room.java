@@ -70,4 +70,26 @@ public class Room {
     public void setCityName(String cityName) {
         this.cityName = cityName;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Room)) return false;
+
+        Room room = (Room) o;
+
+        if (getPrice() != room.getPrice()) return false;
+        if (getPersons() != room.getPersons()) return false;
+        return getCityName() != null ? getCityName().equals(room.getCityName()) : room.getCityName() == null;
+
+    }
+
+    @Override
+    public int hashCode() {
+        int result = persons ^ (persons >>> 8);
+        result = 31 * result + price;
+        result = 31 * result + (cityName != null ? cityName.hashCode() : 0);
+        result = 31 * result + (hotelName != null ? hotelName.hashCode() : 0);
+        return result;
+    }
 }
